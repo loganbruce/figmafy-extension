@@ -1,0 +1,101 @@
+/* Base ==================================================================== */
+#popup-container {
+    min-width: 200px;
+    padding: 0 1em;
+    box-sizing: border-box;
+    background-color: #FFF;
+    color: #191919;
+}
+
+#title-bar {
+    width: 100%;
+    color: inherit;
+    padding: 0.5em 0;
+    display: flex;
+    gap: 10px;
+}
+
+#title-bar p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#options-list {
+    display: flex;
+    flex-direction: column;
+    padding-block: 0.8em;
+}
+
+
+.option {
+    cursor: pointer;
+    padding: 0.3em 0.2em;
+    display: flex;
+    align-items: center;
+    font-size: 0.7em;
+    gap: 8px;
+}
+
+.option input {
+    display: none;
+}
+
+.option:hover {
+    background-color: #0C8CE9;
+}
+
+.option p {
+    margin: 0;
+}
+
+.icon-slot {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-slot svg {
+    margin-bottom: 3px;
+}
+
+input:checked + .icon-slot {
+    opacity: 1;
+}
+
+#reset {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #FF7262;
+}
+
+/* Dark Theme ==================================================================== */
+#popup-container.dark {
+    background-color: #1E1E1E;
+    color: #FFF;
+}
+
+.dark #title-bar {
+    border-bottom: 1px solid #383838;
+}
+
+
+
+
+
+
+
+
+
+
+

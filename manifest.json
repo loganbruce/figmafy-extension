@@ -1,0 +1,22 @@
+{
+  "description": "Bring your favourite design tool with you across the internet! A theme based on Figma including options for light and dark mode.",
+  "manifest_version": 2,
+  "name": "Figmafy",
+
+  "permissions": [
+    "storage",
+    "theme"
+  ],
+
+  "background": {
+    "scripts": ["background_scripts/setTheming.js"]
+  },
+
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icons/figmafy-32.png",
+    "default_title": "Figmafy",
+    "default_popup": "popup/figmafy.html"
+  }
+}
